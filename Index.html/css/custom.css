@@ -1,0 +1,148 @@
+/* style.css - Custom styles for Greenlife Wellness project */
+
+/* General Body Styles */
+body {
+    font-family: 'Inter', sans-serif; /* Using Inter font for a modern look */
+    background-color: #f0f2f5; /* Light grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    margin: 0;
+    padding: 20px; /* Add some padding around the content */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #28a745; /* Green color for the navbar, matching Greenlife theme */
+    padding: 1rem 1.5rem; /* Add consistent padding */
+    border-radius: 0.75rem; /* Rounded corners for the navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 30px; /* Space below the navbar */
+}
+
+.navbar-brand {
+    color: #ffffff !important; /* White text for brand */
+    font-weight: bold;
+    font-size: 1.5rem; /* Larger font size for brand */
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #ffffff !important; /* White text for nav links */
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 0.5rem; /* Slightly rounded corners for links */
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+    color: #e2e6ea !important; /* Lighter white on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    background-color: #218838; /* Darker green for active link */
+    border-radius: 0.5rem;
+}
+
+
+/* Card/Form Container Styling */
+.card {
+    background-color: #ffffff; /* White background for the form card */
+    border: none; /* Remove default border */
+    border-radius: 1.25rem; /* More rounded corners for the card */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* More pronounced shadow for the card */
+    padding: 2.5rem; /* Increased padding inside the card */
+    width: 100%;
+    max-width: 550px; /* Max width to keep the form contained */
+    margin-top: 50px; /* Space from the top, if not vertically centered by body flex */
+}
+
+/* Heading inside the card */
+h2 {
+    color: #343a40; /* Dark grey for heading */
+    margin-bottom: 2rem; /* More space below heading */
+    font-weight: 700; /* Bolder heading */
+    text-align: center;
+    font-size: 2rem; /* Larger heading font size */
+}
+
+/* Form Control (Input fields and Select) Styling */
+.form-control,
+.form-select {
+    border-radius: 0.75rem; /* More rounded corners for input fields */
+    padding: 0.9rem 1.25rem; /* Generous padding for better appearance */
+    border: 1px solid #ced4da; /* Light grey border */
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.05); /* Subtle inner shadow */
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin-bottom: 1rem; /* Space between form fields */
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #28a745; /* Green border on focus */
+    box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25); /* Green glow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Label Styling */
+.form-label {
+    font-weight: 600; /* Bolder labels */
+    color: #495057; /* Darker grey for labels */
+    margin-bottom: 0.5rem;
+}
+
+/* Submit Button Styling */
+.btn-success {
+    background-color: #28a745; /* Green button */
+    border-color: #28a745;
+    border-radius: 0.75rem; /* Rounded corners for the button */
+    padding: 0.8rem 1.5rem; /* Generous padding */
+    font-size: 1.2rem; /* Larger font for button text */
+    font-weight: 600;
+    width: 100%; /* Make button full width */
+    margin-top: 1.5rem; /* Space above the button */
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.1s ease; /* Smooth transition */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Darker green on hover */
+    border-color: #1e7e34;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.btn-success:active {
+    background-color: #1a7431; /* Even darker green on active */
+    border-color: #1a7431;
+    transform: translateY(0); /* Reset lift on click */
+}
+
+/* Link Styling (e.g., "Already have an account? Login here") */
+.text-center a {
+    color: #28a745; /* Green link color */
+    text-decoration: none; /* No underline by default */
+    font-weight: 500;
+    transition: text-decoration 0.2s ease;
+}
+
+.text-center a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        padding: 1.5rem; /* Reduce padding on smaller screens */
+        margin-top: 20px;
+    }
+    h2 {
+        font-size: 1.75rem; /* Slightly smaller heading on small screens */
+    }
+    .navbar {
+        border-radius: 0; /* No rounded corners for navbar on very small screens */
+    }
+}
